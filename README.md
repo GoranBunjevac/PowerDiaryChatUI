@@ -1,6 +1,6 @@
 # PowerDiaryChat UI
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.9.
+The Angular CLI requires a minimum Node.js version of either v14.20, v16.13 or v18.10
 
 ## Description
 Simple UI project written in Angular to show chat history and filter it by minute and by hour
