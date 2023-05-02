@@ -1,0 +1,118 @@
+.chat-window {
+    width: 400px;
+    height: 500px;
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  
+  .chat-header {
+    height: 50px;
+    background-color: #ddd;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+  
+  .chat-header h2 {
+    margin: 0;
+    font-size: 18px;
+  }
+  
+  .chat-body {
+    height: 350px;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-y: scroll;
+  }
+  
+  .message {
+    display: flex;
+    margin-bottom: 10px;
+  }
+  
+  .message p {
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+  }
+  
+  .received {
+    justify-content: flex-start;
+  }
+  
+  .chat-footer {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+  
+  .chat-footer input[type="text"] {
+    flex-grow: 1;
+    height: 40px;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    background-color: #fff;
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  
+  .chat-footer button {
+    height: 40px;
+    padding: 0 20px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 20px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .chat-footer button:hover {
+    background-color: #0062cc;
+  }
+
+  .hourButton {
+    height: 35px;
+    padding: 0 20px;
+    margin-left: 10px;
+    border: none;
+    background-color: lightblue;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 20px;
+  }
+
+  .hourButton:hover {
+    background-color: rgb(135, 204, 227);
+  }
+
+  .minuteButton {
+    height: 35px;
+    padding: 0 20px;
+    margin-left: 10px;
+    border: none;
+    background-color: lightsteelblue;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 20px;
+  }
+
+  .minuteButton:hover {
+    background-color: rgb(147, 179, 220);
+  }
+  

@@ -1,0 +1,24 @@
+<div class="chat-window">
+    <div class="chat-header">
+        <h2>Bob and Kate</h2>
+        <button class="minuteButton" (click)="sortByMinute()">By Minute</button>
+        <button class="hourButton" (click)="sortHourly()">By Hour</button>
+    </div>
+    <div class="chat-body" *ngIf="byMinute">
+        <div class="message received" *ngFor="let item of chatHistory; let i = index; even as isEven">
+            <p [ngStyle]="{ background: isEven ? 'lightblue' : 'white' }">{{ item.timestamp | date :'shortTime' }} : {{
+                item.member }} - {{ item.message }}</p>
+        </div>
+    </div>
+    <div class="chat-body" *ngIf="!byMinute">
+        <div class="message received" *ngFor="let item of hourlyChatHistory; let i = index; even as isEven">
+            <p [ngStyle]="{ background: isEven ? 'lightblue' : 'white' }">{{ item.timestamp | date : 'shortTime' }} :
+                {{
+                item.message }}</p>
+        </div>
+    </div>
+    <div class="chat-footer">
+        <input type="text" placeholder="Type your message...">
+        <button>Send</button>
+    </div>
+</div>
