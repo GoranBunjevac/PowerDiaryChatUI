@@ -1,5 +1,4 @@
-import { NgIfContext } from '@angular/common';
-import { Component, OnInit, TemplateRef } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ChatEvent } from 'src/models/chat-event';
 import { HourlyChatEvent } from 'src/models/hourly-chat-event';
 import { ChatService } from 'src/services/chat.service';
@@ -24,7 +23,6 @@ export class PowerDiaryChatComponent implements OnInit {
     this.chatService.getChat().subscribe((data) => {
       this.chatHistory = data;
       this.byMinute = true;
-      console.log(this.chatHistory);
     });
   }
 
@@ -36,7 +34,6 @@ export class PowerDiaryChatComponent implements OnInit {
     this.chatService.getChatHourlyAggregated().subscribe((data) => {
       this.hourlyChatHistory = data;
       this.byMinute = false;
-      console.log(data);
     });
   }
 }
